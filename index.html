@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SortViz - Sorting Algorithm Visualizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bower_components/flat-ui/dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="bower_components/flat-ui/dist/css/flat-ui.min.css" rel="stylesheet">
+    
+    <!-- Favico -->
+    <link rel="shortcut icon" href="bower_components/flat-ui/dist/img/favicon.ico">
+
+    <!-- hint.css -->
+    <link rel="stylesheet" href="bower_components/hint.css/hint.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Top Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand" href="index.html">Sort Viz</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Visualizations</a></li>
+          <li><a href="tests.html">Tests</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="fui-gear"></span>&nbsp;Settings</a></li>
+          <li><a href="help.html"><span class="fui-user"></span>&nbsp;Help</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+    <!-- End Navbar -->
+
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-md-6"> -->
+          <!-- <div class="row"> -->
+            <select class="form-control select select-primary select-block mbl">
+              <option value="">Bars</option>
+              <option value="">Clock</option>
+              <option value="">3D</option>
+              <option value="">Cats</option>
+              <!-- <option value=""></option> -->
+            </select>
+
+            <div class="block">
+              <table>
+                <tr>
+                  <td>Comparisons</td>
+                  <td>&emsp;0</td>
+                </tr>
+                <tr>
+                  <td>Swaps</td>
+                  <td>&emsp;0</td>
+                </tr>
+              </table>
+            </div>  
+          <!-- </div>        -->
+        <!-- </div> -->
+        <!-- <div class="col-md-6"> -->
+          <!-- <div class="row"> -->
+            <select class="form-control select select-primary select-block mbl pull-right">
+              <option value="">Quick Sort</option>
+              <option value="">Merge Sort</option>
+              <option value="">Shell Sort</option>
+              <option value="">Cats</option>
+              <!-- <option value=""></option> -->
+            </select>
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+      <div class="row">
+        <div class="col-md-6">Visualization</div>
+        <div class="col-md-6">Code</div>
+      </div>
+    </div>
+
+    
+    
+    
+
+    <!-- Bottom Control Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav" style="margin-left:10px;">
+          <li><div id="setSize">Size 7<br /></div><div id="slider1" style="width:250px;"></div></li>
+          <li style="margin-left:10px;"><div id="setSpeed">Speed 7<br /></div><div id="slider2" style="width:250px;"></div></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <span class="hint--top" data-hint="New data set">
+            <li><button class="btn btn-primary btn-lg"><span class="fui-plus"></span></button></li>
+          </span>
+          <span class="hint--top" data-hint="Restart set">
+            <li><button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-refresh"></span></button></li>
+          </span>
+
+          <span class="hint--top" data-hint="Step back">
+            <li><button type="button" class="btn btn-primary btn-lg"><span class="fui-arrow-left"></span></button></li>
+          </span>
+
+          <span class="hint--top" data-hint="Pause">
+            <li><button type="button" class="btn btn-primary btn-lg"><span class="fui-pause"></span></button></li>
+          </span>
+
+          <span class="hint--top" data-hint="Play">
+            <li><button type="button" class="btn btn-primary btn-lg"><span class="fui-play"></span></button></li>
+          </span>
+          
+          <span class="hint--top" data-hint="Step forward">
+            <li><button type="button" class="btn btn-primary btn-lg"><span class="fui-arrow-right"></span></button></li>
+          </span>
+
+          <span class="hint--top" data-hint="Sort set">
+            <li><button type="button" class="btn btn-primary btn-lg">Solve</button></li>
+          </span>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </nav>
+    <!-- End Bottom Control Navbar -->
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="bower_components/flat-ui/dist/js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/flat-ui/dist/js/flat-ui.min.js"></script>
+    <!-- Application -->
+    <script src="application.js"></script>
+
+  </body>
+</html>

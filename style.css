@@ -1,0 +1,38 @@
+body {
+	padding-top: 60px; 
+	padding-bottom: 70px; 
+}
+
+/*.navbar {
+	margin-bottom: 5px;
+}*/
+
+.navbar-right {
+	padding-right: 25px;
+}
+
+.block {
+	margin-left: 25px;
+	line-height: 1.2;
+	display: inline-block;
+}
+
+.select {
+	margin-left: 3px;
+}
+
+.grey {
+	background-color: grey;
+	height: 100%; 
+}
+
+.navbar-fixed-bottom {
+	height: 45px;
+	min-height: 45px;
+}
+
+.container {
+	width: 100%;
+	margin: 0px;
+	padding: 0px 25px;
+}
