@@ -1,5 +1,5 @@
 body {
-	padding-top: 60px; 
+	padding-top: 53px; 
 	padding-bottom: 70px; 
 }
 
@@ -8,7 +8,7 @@ body {
 }*/
 
 .navbar-right {
-	padding-right: 25px;
+	padding-right: 20px;
 }
 
 .block {
@@ -35,4 +35,28 @@ body {
 	width: 100%;
 	margin: 0px;
 	padding: 0px 25px;
+}
+
+.visnav {
+	min-height: 45px;
+	height: 45px;
+	padding: 3px 7px 0px 7px;
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a,
+.nav-sidebar > li > h6 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #1abc9c;
 }
