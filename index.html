@@ -42,10 +42,12 @@
     <!-- End Navbar -->
     <nav class="navbar navbar-default visnav">
       <select class="form-control select select-primary select-block mbl">
+        <optgroup label="Visualization">
         <option value="">Bars</option>
         <option value="">Clock</option>
         <option value="">3D</option>
         <option value="">Cats</option>
+        </optgroup>
         <!-- <option value=""></option> -->
       </select>
 
@@ -63,9 +65,11 @@
       </div>  
 
       <select class="form-control select select-primary select-block mbl pull-right">
+        <optgroup label="Algorithm">
         <option value="">Quick Sort</option>
         <option value="">Merge Sort</option>
         <option value="">Shell Sort</option>
+        </optgroup>
         <!-- <option value=""></option> -->
       </select>
     </nav>
@@ -113,7 +117,7 @@
           </span>
 
           <span class="hint--top" data-hint="Sort set">
-            <li><button type="button" class="btn btn-primary btn-lg">Solve</button></li>
+            <li style="margin-right: 10px;"><button type="button" class="btn btn-primary btn-lg">Solve</button></li>
           </span>
         </ul>
       </div><!--/.nav-collapse -->
