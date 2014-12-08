@@ -1,6 +1,3 @@
-//Panes
-$('#MainSplit').split({orientation:'vertical', limit:100, position:'50%'});
-
 //Flat UI Dropdowns
 $("select").select2({dropdownCssClass: 'dropdown-inverse'});
 
