@@ -35,11 +35,11 @@ String.prototype.repeat = function (num) {
   //Sortable Lists
 $(function () {
     $(".list-sortable").sortable({
-        tolerance: 'pointer',
+        //tolerance: 'pointer',
         containment: "parent",
-        revert: 'invalid',
-        placeholder: 'span2 well placeholder tile',
-        forceHelperSize: true,
+        //revert: 'invalid',
+        //placeholder: 'span2 well placeholder tile',
+        //forceHelperSize: true,
         axis: "x"
     });
     $(".list-sortable").disableSelect();
