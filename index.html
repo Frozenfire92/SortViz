@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <title>SortViz - Sorting Algorithm Visualizer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Loading Bootstrap -->
+    <!-- CSS -->
+    <!-- Bootstrap -->
     <link href="bower_components/flat-ui/dist/css/vendor/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Loading Flat UI -->
+    <!-- Flat UI -->
     <link href="bower_components/flat-ui/dist/css/flat-ui.min.css" rel="stylesheet">
-    
     <!-- Favico -->
     <link rel="shortcut icon" href="bower_components/flat-ui/dist/img/favicon.ico">
-
     <!-- hint.css -->
     <link rel="stylesheet" href="bower_components/hint.css/hint.css">
+    <!-- jquery.splitter -->
+    <link rel="stylesheet" href="bower_components/jquery.splitter/css/jquery.splitter.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="monokai.css">
   </head>
   <body>
     <!-- Top Navbar -->
@@ -34,12 +34,13 @@
           <li><a href="tests.html">Tests</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="fui-gear"></span>&nbsp;Settings</a></li>
+          <li><a data-toggle="modal" data-target="#settingsModal"><span class="fui-gear"></span>&nbsp;Settings</a></li>
           <li><a href="help.html"><span class="fui-user"></span>&nbsp;Help</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
-    <!-- End Navbar -->
+
+    <!-- Secondary Navbar -->
     <nav class="navbar navbar-default visnav">
       <select class="form-control select select-primary select-block mbl">
         <optgroup label="Visualization">
@@ -73,17 +74,86 @@
         <!-- <option value=""></option> -->
       </select>
     </nav>
-    <div class="container">
-      
-      <div class="row">
-        <div class="col-md-6">Visualization</div>
-        <div class="col-md-6">Code</div>
+
+    <!-- Content -->
+    <div id="MainSplit">
+      <div> 
+        <div class="container">
+          <img src="img/Bars.svg" alt="Clock Visualization">
+        </div>
+      </div>
+      <div>
+        <div class="container code highlight">
+          <iframe src="quicksort.html" class="code" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Settings Modal -->
+    <div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="settingsModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Settings</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <h6>Visualization</h6>
+              <div class="form-group">
+                <label for="syntax" class="control-label">Syntax Highlighting</label>
+                <select id="syntax" class="form-control select select-primary select-block mbl pull-right">
+                  <option>Monokai (default)</option>
+                  <option>Black</option>
+                  <option>White</option>
+                  <option>Emacs</option>
+                  <option>Vim</option>
+                  <option>Solarized Light</option>
+                  <option>Solarized Dark</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="stats" class="control-label">Statistics</label>
+                <div class="">
+                  <label>
+                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs1" value="option1" checked>
+                    Comparisons
+                  </label>
+                </div>
+                <div class="">
+                  <label>
+                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs2" value="option2" checked>
+                    Swaps
+                  </label>
+                </div>
+                <div class="">
+                  <label>
+                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs2" value="option2">
+                    Assignments
+                  </label>
+                </div>
+                <div class="">
+                  <label>
+                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs2" value="option2">
+                    Memory Accesses
+                  </label>
+                </div>
+                <div class="">
+                  <label>
+                    <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs2" value="option2">
+                    Number of Variables used
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel changes</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+          </div>
+        </div>
       </div>
     </div>
-
-    
-    
-    
 
     <!-- Bottom Control Navbar -->
     <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
@@ -124,10 +194,13 @@
     </nav>
     <!-- End Bottom Control Navbar -->
 
+    <!-- Javascript -->
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
     <script src="bower_components/flat-ui/dist/js/vendor/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/flat-ui/dist/js/flat-ui.min.js"></script>
+    <!-- jquery.splitter because frameset deprecation *sigh* -->
+    <script src="bower_components/jquery.splitter/js/jquery.splitter-0.14.0.js"></script>
     <!-- Application -->
     <script src="application.js"></script>
 
