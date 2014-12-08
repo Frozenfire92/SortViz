@@ -40,14 +40,57 @@
       </div><!--/.nav-collapse -->
     </div>
     <!-- End Navbar -->
+
+    <!-- Begin Tests Controls -->
+    <nav class="navbar navbar-default visnav">
+      <select class="form-control select select-primary select-block mbl pull-left">
+        <optgroup label="Algorithm">
+        <option value="">Quick Sort</option>
+        <option value="">Merge Sort</option>
+        <option value="">Shell Sort</option>
+        </optgroup>
+        <!-- <option value=""></option> -->
+      </select>
+      <ul class="nav navbar-nav nav-centre" style="margin-left:10px;">
+          <li><div id="setIter">Iterations: 7<br /></div><div id="slider1" style="width:250px;"></div></li>
+      </ul>
+        <!-- <option value=""></option> -->
+      </select>
+    <button type="submit" class="btn btn-default pull-right">
+    Start
+    </button>
+
+
+    </nav>
+    <!-- End Tests Controls -->
+
+    <!-- Begin Test Body -->
+    <div>
+      <div class="list-sortable">
+        <a class="btn item"> 0 </a>
+        <a class="btn item"> 1 </a>
+        <a class="btn item"> 2 </a>
+        <a class="btn item"> 3 </a>
+        <a class="btn item"> 4 </a>
+      </div>
+    </div>
+
+
+
     
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
     <script src="bower_components/flat-ui/dist/js/vendor/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/flat-ui/dist/js/flat-ui.min.js"></script>
+    <!-- JQuery UI -->
+    <script src="bower_components/jqueryui/jquery-ui.js"></script>
     <!-- Application -->
     <script src="application.js"></script>
+
+
+
+
 
   </body>
 </html>
