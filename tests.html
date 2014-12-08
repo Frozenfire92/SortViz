@@ -34,7 +34,8 @@
           <li class="active"><a href="tests.html">Tests</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="fui-gear"></span>&nbsp;Settings</a></li>
+          <li><a data-toggle="modal" data-target="#settingsModal"><span class="fui-gear"></span>&nbsp;Settings</a></li>
+
           <li><a href="help.html"><span class="fui-user"></span>&nbsp;Help</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -77,6 +78,71 @@
     </div>
 
 
+    <!-- Settings Modal -->
+    <div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="settingsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Settings</h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <h6>Visualization</h6>
+                <div class="form-group">
+                  <label for="syntax" class="control-label">Syntax Highlighting</label>
+                  <select id="syntax" class="form-control select select-primary select-block mbl pull-right">
+                    <option>Monokai (default)</option>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Emacs</option>
+                    <option>Vim</option>
+                    <option>Solarized Light</option>
+                    <option>Solarized Dark</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="stats" class="control-label">Statistics</label>
+                  <div class="">
+                    <label>
+                      <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs1" value="option1" checked>
+                      Comparisons
+                    </label>
+                  </div>
+                  <div class="">
+                    <label>
+                      <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs2" value="option2" checked>
+                      Swaps
+                    </label>
+                  </div>
+                  <div class="">
+                    <label>
+                      <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs2" value="option2">
+                      Assignments
+                    </label>
+                  </div>
+                  <div class="">
+                    <label>
+                      <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs2" value="option2">
+                      Memory Accesses
+                    </label>
+                  </div>
+                  <div class="">
+                    <label>
+                      <input type="checkbox" name="optionscheckboxs" id="optionscheckboxs2" value="option2">
+                      Number of Variables used
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel changes</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
 
     
 
@@ -88,7 +154,7 @@
     <script src="bower_components/jqueryui/jquery-ui.js"></script>
     <!-- Application -->
     <script src="application.js"></script>
-    <script src="test.js"></script>
+    <script src="tests.js"></script>
 
 
 
