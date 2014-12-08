@@ -81,6 +81,20 @@ body {
   background-color: #1abc9c;
 }
 
+#MainSplit {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 98px;
+	bottom:59px;
+	overflow: hidden;
+}
+
+.code {
+	width: 100%;
+	height: 100%;
+}
+
 .btn-default {
   background-color: #1abc9c;
 }

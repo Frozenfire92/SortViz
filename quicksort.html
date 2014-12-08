@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="monokai.css">
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">quicksort</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">right</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="n">right</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">left</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">right</span>
+    <span class="k">if</span> <span class="n">l</span> <span class="o">&lt;=</span> <span class="n">r</span><span class="p">:</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[(</span><span class="n">left</span><span class="o">+</span><span class="n">right</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">]</span>
+        <span class="k">while</span> <span class="n">l</span> <span class="o">&lt;=</span> <span class="n">r</span><span class="p">:</span>
+            <span class="k">while</span> <span class="n">l</span> <span class="o">&lt;=</span> <span class="n">right</span> <span class="ow">and</span> <span class="n">lst</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">mid</span><span class="p">:</span>
+                <span class="n">l</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">while</span> <span class="n">r</span> <span class="o">&gt;</span> <span class="n">left</span> <span class="ow">and</span> <span class="n">lst</span><span class="p">[</span><span class="n">r</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">mid</span><span class="p">:</span>
+                <span class="n">r</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">l</span> <span class="o">&lt;=</span> <span class="n">r</span><span class="p">:</span>
+                <span class="n">lst</span><span class="p">[</span><span class="n">l</span><span class="p">],</span> <span class="n">lst</span><span class="p">[</span><span class="n">r</span><span class="p">]</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[</span><span class="n">r</span><span class="p">],</span> <span class="n">lst</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">l</span> <span class="o">!=</span> <span class="n">r</span><span class="p">:</span>
+                    <span class="n">lst</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+                <span class="n">l</span><span class="o">+=</span><span class="mi">1</span>
+                <span class="n">r</span><span class="o">-=</span><span class="mi">1</span>
+        <span class="k">if</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">r</span><span class="p">:</span>
+            <span class="n">quicksort</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">l</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">:</span>
+            <span class="n">quicksort</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">right</span><span class="p">)</span>
+</pre></div>
