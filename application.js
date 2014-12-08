@@ -42,6 +42,7 @@ $(function () {
         forceHelperSize: true,
         axis: "x"
     });
+    $(".list-sortable").disableSelect();
 });
 
   $(function () {
