@@ -84,6 +84,8 @@ body {
 }
 
 .visnav {
+	position: fixed;
+	width: 100%;
 	min-height: 45px;
 	height: 45px;
 	padding: 3px 7px 0px 7px;
