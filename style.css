@@ -86,6 +86,14 @@ body {
   color: #fff;
   background-color: #1abc9c;
 }
+/* Terrible hack, I know. Forgive me, deadlines man */
+.about {
+	position: fixed;
+}
+.tutorials {
+	position: fixed;
+	top: 35%;
+}
 
 #MainSplit {
 	position: absolute;
