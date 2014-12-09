@@ -17,18 +17,38 @@ body {
     box-shadow: 0px 0px 10px #888;
 }
 
+
+.iterlabel {
+	
+	margin-left: 40px;
+
+}
+
+.iteration {
+	height: 100px;
+	margin-left: 5px;
+	/*display: inline-block;*/
+	vertical-align: middle;
+
+}
 .item {
     height: 100px;
     width: 100px;
     background-color: #1abc9c;
     color: #fff;
     margin: 5px;
+    padding-top: 40px;
+
 }
 
 .btn-check {
 	height: 80px;
 	width: 120px;
-	margin-right: 50px;
+	margin-right: 150px;
+	background-color: #1abc9c;
+    color: #fff;
+    padding-top: 30px;
+    display: block;
 }
 
 /*End Sortable List Styles*/
