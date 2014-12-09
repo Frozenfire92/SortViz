@@ -25,6 +25,12 @@ body {
     margin: 5px;
 }
 
+.btn-check {
+	height: 80px;
+	width: 120px;
+	margin-right: 50px;
+}
+
 /*End Sortable List Styles*/
 
 .navbar-right {
