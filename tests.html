@@ -52,12 +52,12 @@
         </optgroup>
         <!-- <option value=""></option> -->
       </select>
-      <ul class="nav navbar-nav nav-centre" style="margin-left:10px;">
+      <ul class="nav navbar-nav nav-centre" style="margin-left:100px;">
           <li><div id="setIter">Iterations: 7<br /></div><div id="slider1" style="width:250px;"></div></li>
       </ul>
         <!-- <option value=""></option> -->
       </select>
-    <div class="btn btn-default pull-right">
+    <div class="btn btn-default pull-right" style="margin-right: 10px">
     Start
     </div>
 
@@ -74,7 +74,86 @@
         <a class="btn item"> 2 </a>
         <a class="btn item"> 3 </a>
         <a class="btn item"> 4 </a>
-        <div class="btn btn-check pull-right">
+        <div class="btn btn-check pull-right ui-state-disabled">
+          Check
+        </div>
+      </div>
+    </div>
+    <div class="iterlabel"> Iteration 2 </div>
+    <div id="iter2" class="iteration">
+      <div class="list-sortable">
+        <a class="btn item"> 0 </a>
+        <a class="btn item"> 1 </a>
+        <a class="btn item"> 2 </a>
+        <a class="btn item"> 3 </a>
+        <a class="btn item"> 4 </a>
+        <div class="btn btn-check pull-right ui-state-disabled">
+          Check
+        </div>
+      </div>
+    </div>
+    <div class="iterlabel"> Iteration 3 </div>
+    <div id="iter3" class="iteration">
+      <div class="list-sortable">
+        <a class="btn item"> 0 </a>
+        <a class="btn item"> 1 </a>
+        <a class="btn item"> 2 </a>
+        <a class="btn item"> 3 </a>
+        <a class="btn item"> 4 </a>
+        <div class="btn btn-check pull-right ui-state-disabled">
+          Check
+        </div>
+      </div>
+    </div>
+    <div class="iterlabel"> Iteration 4 </div>
+    <div id="iter4" class="iteration">
+      <div class="list-sortable">
+        <a class="btn item"> 0 </a>
+        <a class="btn item"> 1 </a>
+        <a class="btn item"> 2 </a>
+        <a class="btn item"> 3 </a>
+        <a class="btn item"> 4 </a>
+        <a data-toggle="modal" data-target="#checkModal" class="btn btn-check pull-right ui-state-disabled">
+          Check
+        </a>
+      </div>
+
+    </div>
+    <div class="iterlabel"> Iteration 5 </div>
+    <div id="iter5" class="iteration">
+      <div class="list-sortable">
+        <a class="btn item"> 0 </a>
+        <a class="btn item"> 1 </a>
+        <a class="btn item"> 2 </a>
+        <a class="btn item"> 3 </a>
+        <a class="btn item"> 4 </a>
+        <div class="btn btn-check pull-right ui-state-disabled">
+          Check
+        </div>
+      </div>
+    </div>
+    <div class="iterlabel"> Iteration 6 </div>
+    <div id="iter6" class="iteration">
+      <div class="list-sortable">
+        <a class="btn item"> 0 </a>
+        <a class="btn item"> 1 </a>
+        <a class="btn item"> 2 </a>
+        <a class="btn item"> 3 </a>
+        <a class="btn item"> 4 </a>
+        <div class="btn btn-check pull-right ui-state-disabled">
+          Check
+        </div>
+      </div>
+    </div>
+    <div class="iterlabel"> Iteration 7 </div>
+    <div id="iter7" class="iteration">
+      <div class="list-sortable">
+        <a class="btn item"> 0 </a>
+        <a class="btn item"> 1 </a>
+        <a class="btn item"> 2 </a>
+        <a class="btn item"> 3 </a>
+        <a class="btn item"> 4 </a>
+        <div class="btn btn-check pull-right ui-state-disabled">
           Check
         </div>
       </div>
@@ -143,6 +222,24 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel changes</button>
               <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+       <!-- Check Modal -->
+    <div class="modal fade" id="checkModal" tabindex="0" role="dialog" aria-labelledby="settingsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Congratulations!</h4>
+            </div>
+            <div class="modal-body">
+              Congratulations! That is the correct arrangement for the current iteration.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Continue</button>
             </div>
           </div>
         </div>

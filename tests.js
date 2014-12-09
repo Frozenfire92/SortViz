@@ -8,5 +8,4 @@ $(function () {
         //forceHelperSize: true,
         axis: "x"
     });
-    $(".btn-check").sortable("disable");
 });
