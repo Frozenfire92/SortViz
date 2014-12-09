@@ -157,8 +157,11 @@
           Check
         </a>
       </div>
-
     </div>
+
+    <a data-toggle="modal" data-target="#submitModal" class="btn btn-check" style="width:300px; margin:auto; margin-top:40px; height:60px; padding-top:20px">
+          Submit
+        </a>
 
 
     <!-- Settings Modal -->
@@ -245,6 +248,22 @@
         </div>
     </div>
 
+    <div class="modal fade" id="submitModal" tabindex="0" role="dialog" aria-labelledby="settingsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Congratulations!</h4>
+            </div>
+            <div class="modal-body">
+              Congratulations! You have successfully completed 7 iterations of the algorithm! You are a machine ;)
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Continue</button>
+            </div>
+          </div>
+        </div>
+    </div>
     
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
